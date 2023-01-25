@@ -96,6 +96,24 @@
     .menu a {
         color: black;
         line-height: 60px;
+        position: relative;
+    }
+
+    .menu a::after {
+        content: "";
+        background-color: black;
+        position: absolute;
+        left: 0;
+        top: calc(100% + 4px);
+        width: 100%;
+        height: 4px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .menu a.selected::after,
+    .menu a:hover::after {
+        opacity: 0.8;
     }
 
     .open,
