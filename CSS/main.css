@@ -376,6 +376,21 @@ section[id] {
         
 
     }
+
+    /* FOOTER */
+
+    .final {
+        position: relative;
+        width: 100%;
+        background: black;
+        color: white;
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 
