@@ -8,3 +8,10 @@ function toggleMenu() {
 
 openBtn.addEventListener("click", toggleMenu)
 closeBtn.addEventListener("click", toggleMenu)
+
+const menulink = document.querySelectorAll('.menu a[href^="#"]');
+menulink.forEach(menulink=> {
+    menulink.addEventListener("click", function() {
+        menu.classList.remove("opened")
+    })
+})
